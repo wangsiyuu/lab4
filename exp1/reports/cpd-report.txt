@@ -1,0 +1,106 @@
+Found a 4 line (43 tokens) duplication in the following files: 
+Starting at line 158 of C:\Users\think\workspace\exp1\src\exp1\Expression.java
+Starting at line 166 of C:\Users\think\workspace\exp1\src\exp1\Expression.java
+
+  void simplify(char ch, int dig) {
+    ArrayList<Node> tmp = new ArrayList<Node>();
+    for (int i = 0; i < an.size(); i++) {
+      tmp.add(an.get(i).simplify(ch, dig));
+=====================================================================
+Found a 7 line (42 tokens) duplication in the following files: 
+Starting at line 43 of C:\Users\think\workspace\exp1\src\exp1\Expression.java
+Starting at line 53 of C:\Users\think\workspace\exp1\src\exp1\Expression.java
+
+        if (i + 1 >= str.length()) {
+          return false;
+        }
+        if (!isch(str.charAt(i + 1)) && !isdig(str.charAt(i + 1))) {
+          return false;
+        }
+      } else if (str.charAt(i) == '*') {
+=====================================================================
+Found a 5 line (41 tokens) duplication in the following files: 
+Starting at line 90 of C:\Users\think\workspace\exp1\src\exp1\Node.java
+Starting at line 101 of C:\Users\think\workspace\exp1\src\exp1\Node.java
+
+        if (cnt == 1) {
+          System.out.print("*" + pchar);
+        } else if (cnt > 1) {
+          System.out.print("*" + pchar + "^" + cnt);
+        }
+=====================================================================
+Found a 7 line (34 tokens) duplication in the following files: 
+Starting at line 30 of C:\Users\think\workspace\exp1\src\exp1\Expression.java
+Starting at line 40 of C:\Users\think\workspace\exp1\src\exp1\Expression.java
+
+        if (!isch(str.charAt(i - 1))) {
+          return false;
+        }
+        if (i + 1 >= str.length()) {
+          return false;
+        }
+        if (!isdig(str.charAt(i + 1))) {
+=====================================================================
+Found a 3 line (33 tokens) duplication in the following files: 
+Starting at line 82 of C:\Users\think\workspace\exp1\src\exp1\Expression.java
+Starting at line 45 of C:\Users\think\workspace\exp1\src\exp1\Node.java
+
+    StringBuilder sb = new StringBuilder();
+    for (int i = 0; i < str.length(); i++) {
+      if (str.charAt(i) == '-') {
+=====================================================================
+Found a 4 line (32 tokens) duplication in the following files: 
+Starting at line 40 of C:\Users\think\workspace\exp1\src\exp1\Expression.java
+Starting at line 53 of C:\Users\think\workspace\exp1\src\exp1\Expression.java
+
+        if (i - 1 >= 0 && !isch(str.charAt(i - 1)) && !isdig(str.charAt(i - 1))) {
+          return false;
+        }
+        if (i + 1 >= str.length()) {
+=====================================================================
+Found a 4 line (28 tokens) duplication in the following files: 
+Starting at line 36 of C:\Users\think\workspace\exp1\src\exp1\Expression.java
+Starting at line 46 of C:\Users\think\workspace\exp1\src\exp1\Expression.java
+
+        if (!isdig(str.charAt(i + 1))) {
+          return false;
+        }
+      } else if (str.charAt(i) == '+' || str.charAt(i) == '-') {
+=====================================================================
+Found a 3 line (28 tokens) duplication in the following files: 
+Starting at line 59 of C:\Users\think\workspace\exp1\src\exp1\Node.java
+Starting at line 87 of C:\Users\think\workspace\exp1\src\exp1\Node.java
+
+    int num = 0;
+    for (int i = 0; i < str.length(); i++) {
+      if (str.charAt(i) != ch) {
+=====================================================================
+Found a 3 line (26 tokens) duplication in the following files: 
+Starting at line 24 of C:\Users\think\workspace\exp1\src\exp1\Expression.java
+Starting at line 83 of C:\Users\think\workspace\exp1\src\exp1\Expression.java
+Starting at line 46 of C:\Users\think\workspace\exp1\src\exp1\Node.java
+
+    for (int i = 0; i < str.length(); i++) {
+      //System.out.println(i+"  "+str.charAt(i));
+      if (str.charAt(i) == '^') {
+=====================================================================
+Found a 3 line (25 tokens) duplication in the following files: 
+Starting at line 24 of C:\Users\think\workspace\exp1\src\exp1\Expression.java
+Starting at line 83 of C:\Users\think\workspace\exp1\src\exp1\Expression.java
+Starting at line 46 of C:\Users\think\workspace\exp1\src\exp1\Node.java
+Starting at line 60 of C:\Users\think\workspace\exp1\src\exp1\Node.java
+Starting at line 88 of C:\Users\think\workspace\exp1\src\exp1\Node.java
+
+    for (int i = 0; i < str.length(); i++) {
+      //System.out.println(i+"  "+str.charAt(i));
+      if (str.charAt(i) == '^') {
+=====================================================================
+Found a 5 line (25 tokens) duplication in the following files: 
+Starting at line 61 of C:\Users\think\workspace\exp1\src\exp1\Expression.java
+Starting at line 67 of C:\Users\think\workspace\exp1\src\exp1\Expression.java
+
+          char ch = str.charAt(i - 1);
+          if (ch != '+' && ch != '-' && ch != '*' && ch != '^') {
+            return false;
+          }
+        }
